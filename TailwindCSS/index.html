@@ -1,0 +1,1207 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.png" />
+    <title>
+      Movie Tickets, Plays, Sports, Events & Cinemas near Pune - BookMyShow
+    </title>
+  </head>
+  <body>
+    <div class="mainContainer overflow-x-hidden bg-[#F5F5F5]">
+      <div
+        class="bg-[#333545] xs:pr-2 xs:pl-2 w-full flex flex-col items-center justify-center"
+      >
+        <div class="xs:w-full xl:w-[65%]">
+          <div class="xs:w-full flex justify-between">
+            <div
+              class="xs:w-1/2 xs:pt-2 xs:pb-2 flex items-center justify-center w-3/5 text-white pt-4 pb-4"
+            >
+              <div class="xl:ml-5">
+                <img
+                  src="./Images/logo.png"
+                  alt="Logo"
+                  class="xs:w-64 xl:w-52 pr-3 cursor-pointer"
+                />
+              </div>
+              <div class="w-full">
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="Search for Movies, Events, Plays, Sports and Activitis"
+                  class="searchBar w-full h-9 rounded-md p-3 text-sm outline-none"
+                />
+              </div>
+            </div>
+            <div
+              class="xs:w-1/2 sm:justify-evenly lg:justify-end text-sm w-44 flex items-center justify-between text-white"
+            >
+              <div class="lg:mr-5 xl:mr-10 hover:cursor-pointer">
+                Pune
+                <i class="fa-solid fa-sort-down"></i>
+              </div>
+              <div>
+                <span
+                  class="lg:mr-5 xl:mr-10 pt-1 pb-1 pr-3 pl-3 rounded-md bg-[#F84464] hover:cursor-pointer hover:bg-red-500"
+                >
+                  Sign in
+                </span>
+              </div>
+              <div class="hover:cursor-pointer">
+                <i class="fa-solid fa-bars fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="xs:flex-col xs:w-full w-full flex xl:items-center justify-center bg-[#1F2533]"
+      >
+        <div
+          class="xs:w-full xs:flex-col xs:text-xs sm:text-sm lg:flex-row xl:w-[65%] flex items-center justify-between text-sm p-2"
+        >
+          <div
+            class="xs:w-full sm:justify-evenly lg:w-2/5 xl:w-2/5 w-96 flex justify-between text-gray-400"
+          >
+            <span class="hover:text-white hover:cursor-pointer"
+              ><a href="#">Movies</a></span
+            >
+            <span class="hover:text-white hover:cursor-pointer"
+              >Stream <sup class="text-red-500">New</sup></span
+            >
+            <span class="hover:text-white hover:cursor-pointer">Events</span>
+            <span class="hover:text-white hover:cursor-pointer">Plays</span>
+            <span class="hover:text-white hover:cursor-pointer">Sports</span>
+            <span class="hover:text-white hover:cursor-pointer">Activitis</span>
+            <span class="hover:text-white hover:cursor-pointer">Buzz</span>
+          </div>
+          <div
+            class="xs:w-full xs:mt-2 xs:text-xs sm:text-sm sm:justify-evenly lg:w-1/3 xl:w-2/5 lg:mt-0 flex justify-between text-[#D1D5DB] text-sm"
+          >
+            <span class="hover:cursor-pointer"
+              >ListYourShow <sup class="text-red-500">New</sup></span
+            >
+            <span class="hover:cursor-pointer">Corporates</span>
+            <span class="hover:cursor-pointer">Offers</span>
+            <span class="hover:cursor-pointer">Gift Cards</span>
+          </div>
+        </div>
+      </div>
+      <div class="xs:pt-2 lg:pt-2 bg-[#EBEBEB] pt-2 pb-2">
+        <div class="xs:gap-1 lg:gap-3 flex overflow-x-scroll scrollbar-hide">
+          <img
+            src="./Images/home/slide/1.jpg"
+            alt="Slide"
+            class="xs:rounded-none xs:w-[80%] lg:w-full cursor-pointer"
+          />
+          <img
+            src="./Images/home/slide/2.jpg"
+            alt="Slide"
+            class="xs:rounded-none cursor-pointer"
+          />
+          <img
+            src="./Images/home/slide/4.jpg"
+            alt="Slide"
+            class="xs:rounded-none cursor-pointer"
+          />
+          <img
+            src="./Images/home/slide/5.jpg"
+            alt="Slide"
+            class="xs:rounded-none cursor-pointer"
+          />
+        </div>
+      </div>
+      <div class="w-full flex justify-center">
+        <div
+          class="xs:w-full xs:p-2 xl:w-[65%] w-[65%] flex items-center justify-between p-2"
+        >
+          <div
+            class="xs:w-1/2 xs:text-base lg:text-base xl:text-2xl w-96 flex justify-between font-bold"
+          >
+            <span>Recommended Movies</span>
+          </div>
+          <div
+            class="xs:w-1/2 w-80 flex justify-end text-sm font-medium text-[#F84464]"
+          >
+            <span class="hover:cursor-pointer">See All ></span>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex justify-center">
+        <div
+          class="slider xs:w-full xs:p-1 xl:w-[65%] flex items-center justify-center text-sm p-2"
+        >
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00063710-vbaekxtkuh-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Brahmastra</span
+            ><br />
+            <span class="xs:text-xs text-base overflow-auto"
+              >Action/Adventure/Fantasy</span
+            >
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00076943-wapqzjeadj-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Top Gun : Maverick</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Drama</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00307869-brknthzubb-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Karthikeya 2</span
+            ><br />
+            <span class="xs:text-xs text-base">Fantasy/Mystery/Thriller</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00322816-nyqvzhqjdz-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            /><span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Oke Oka Jeevitham</span
+            ><br />
+            <span class="xs:text-xs text-base">Drama/Sci-Fi/Thriller</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00329656-przcvuftwc-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Sita Ramam</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Drama/Romantic</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00331590-ezbvpdagxj-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Takatak 2</span
+            ><br />
+            <span class="xs:text-xs text-base">Comedy/Romantic</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00331912-enlthftmgl-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Daagdi Chaawl 2</span
+            ><br />
+            <span class="xs:text-xs text-base">Crime/Drama</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00333354-ratqcxklzk-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Beast (English)</span
+            ><br />
+            <span class="xs:text-xs text-base">Adventure/Horror/Thriller</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00335260-mqucsyadhv-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Captain</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Sci-Fi/Thriller</span>
+          </div>
+        </div>
+      </div>
+      <!-- ---------- banner ----------------- -->
+      <div class="xs:mt-0 w-full flex justify-center mt-4">
+        <div
+          class="xs:w-full xs:p-0 xl:w-[65%] w-[65%] flex items-center justify-between text-sm p-2 cursor-pointer"
+        >
+          <img
+            src="./Images/home/lead-in-v3-collection-202102040828.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- ------------- banner end ------------------ -->
+      <div class="w-full flex justify-center">
+        <div
+          class="xs:w-full xl:w-[65%] w-[65%] flex items-center justify-between p-2"
+        >
+          <div
+            class="xs:text-base xs:w-full xl:text-2xl w-96 flex justify-between text-2xl font-bold"
+          >
+            <span>The Best of Entertainment</span>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex justify-center">
+        <div
+          class="slider xs:w-full xl:w-[65%] xs:p-0 w-[65%] flex items-center justify-center text-sm p-2"
+        >
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/best of entertainment/bestofentertainment-1.jfif"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/best of entertainment/bestofentertainment-2.jfif"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/best of entertainment/bestofentertainment-3.jfif"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/best of entertainment/bestofentertainment-4.jfif"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/best of entertainment/bestofentertainment-5.jfif"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/best of entertainment/bestofentertainment-6.jfif"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/best of entertainment/bestofentertainment-7.jfif"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/best of entertainment/bestofentertainment-8.jfif"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/best of entertainment/bestofentertainment-9.jfif"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/best of entertainment/bestofentertainment-10.jfif"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/best of entertainment/bestofentertainment-11.jfif"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/best of entertainment/bestofentertainment-12.jfif"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="xs:mt-4 w-full flex items-center justify-center mt-10 bg-[#2B3148]"
+      >
+        <div
+          class="xs:w-full xs:p-0 xl:w-[65%] w-[65%] flex-col items-center justify-between p-2"
+        >
+          <img
+            src="./Images/home/premiere-banner-web-collection-202208191200.png"
+            alt=""
+            class="cursor-pointer"
+          />
+          <div class="w-full flex items-center justify-between text-sm p-2">
+            <div class="xs:w-1/2 flex flex-col text-white">
+              <span class="xs:text-base xl:text-2xl text-2xl font-bold"
+                >Premieres Movies</span
+              >
+              <span class="xs:text-xs xl:text-sm xs:text-gray-300"
+                >Brand new releases every Friday</span
+              >
+            </div>
+            <div
+              class="xs:w-1/2 w-80 flex justify-end text-sm font-medium text-[#F84464]"
+            >
+              <span class="hover:cursor-pointer">See All ></span>
+            </div>
+          </div>
+          <!-- ------------------------- Premieres --------------- -->
+          <div class="w-full flex justify-center">
+            <div
+              class="slider w-full flex items-center justify-center text-sm text-white"
+            >
+              <div class="m-2 cursor-pointer">
+                <img
+                  src="./Images/home/Premier/premieres-1.jpg"
+                  alt="Movie"
+                  class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+                />
+                <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+                  >Top Gun: Maverick</span
+                ><br />
+                <span class="xs:text-xs text-base">English</span>
+              </div>
+              <div class="m-2 cursor-pointer">
+                <img
+                  src="./Images/home/Premier/premieres-2.jpg"
+                  alt="Movie"
+                  class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+                />
+                <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+                  >Jurassic Worl: Dominion</span
+                ><br />
+                <span class="xs:text-xs text-base">English</span>
+              </div>
+              <div class="m-2 cursor-pointer">
+                <img
+                  src="./Images/home/Premier/premieres-3.jpg"
+                  alt="Movie"
+                  class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+                />
+                <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+                  >Fantastic Beasts: The Secrets Of Dumbledore</span
+                ><br />
+                <span class="xs:text-xs text-base">English</span>
+              </div>
+              <div class="m-2 cursor-pointer">
+                <img
+                  src="./Images/home/Premier/premieres-4.jpg"
+                  alt="Movie"
+                  class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+                /><span class="xs:text-sm xl:text-lg text-lg font-semibold"
+                  >Memory</span
+                ><br />
+                <span class="xs:text-xs text-base">English</span>
+              </div>
+              <div class="m-2 cursor-pointer">
+                <img
+                  src="./Images/home/Premier/premieres-5.jpg"
+                  alt="Movie"
+                  class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+                />
+                <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+                  >Orphan: First Kill (2022)</span
+                ><br />
+                <span class="xs:text-xs text-base">English</span>
+              </div>
+              <div class="m-2 cursor-pointer">
+                <img
+                  src="./Images/home/Premier/premieres-6.jpg"
+                  alt="Movie"
+                  class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+                />
+                <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+                  >Spider Man: No Way Home (Movie + Special Extra Content)</span
+                ><br />
+                <span class="xs:text-xs text-base">English</span>
+              </div>
+              <div class="m-2 cursor-pointer">
+                <img
+                  src="./Images/home/Premier/premieres-7.jpg"
+                  alt="Movie"
+                  class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+                />
+                <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+                  >Ragdoll (TV Series)</span
+                ><br />
+                <span class="xs:text-xs text-base">English</span>
+              </div>
+              <div class="m-2 cursor-pointer">
+                <img
+                  src="./Images/home/Premier/premieres-8.jpg"
+                  alt="Movie"
+                  class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+                />
+                <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+                  >Sherwood (TV Series)</span
+                ><br />
+                <span class="xs:text-xs text-base">English</span>
+              </div>
+              <div class="m-2 cursor-pointer">
+                <img
+                  src="./Images/home/Premier/premieres-9.jpg"
+                  alt="Movie"
+                  class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+                />
+                <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+                  >Unforgotten: Series 1</span
+                ><br />
+                <span class="xs:text-xs text-base">English</span>
+              </div>
+              <div class="m-2 cursor-pointer">
+                <img
+                  src="./Images/home/Premier/premieres-10.jpg"
+                  alt="Movie"
+                  class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+                />
+                <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+                  >Angel</span
+                ><br />
+                <span class="xs:text-xs text-base">English</span>
+              </div>
+            </div>
+          </div>
+          <!-- ------------------------- Premieres end --------------- -->
+        </div>
+      </div>
+      <!-- ----------------- Extra ------------------ -->
+      <div
+        class="xs:w-full xl:w-full xl:items-center xl:justify-center w-[65%] flex items-center justify-between p-2"
+      >
+        <div
+          class="xs:text-base xs:w-full xl:text-2xl xl:w-[65%] flex justify-between text-2xl font-bold"
+        >
+          <span>Extra</span>
+        </div>
+      </div>
+      <div class="xs:mt-0 w-full flex justify-center mt-4">
+        <div
+          class="xs:w-full xs:p-2 xs:justify-center xl:w-[80%] xl:justify-between flex flex-wrap items-center justify-between"
+        >
+          <img
+            src="./Images/home/extra/extra-1.png"
+            alt=""
+            class="xs:w-[25%] sm:w-[13%] xl:w-[10%] 2xl:w-[7%] cursor-pointer"
+          />
+          <img
+            src="./Images/home/extra/extra-2.png"
+            alt=""
+            class="xs:w-[25%] sm:w-[13%] xl:w-[10%] 2xl:w-[7%] cursor-pointer"
+          />
+          <img
+            src="./Images/home/extra/extra-4.png"
+            alt=""
+            class="xs:w-[25%] sm:w-[13%] xl:w-[10%] 2xl:w-[7%] cursor-pointer"
+          />
+          <img
+            src="./Images/home/extra/extra-5.png"
+            alt=""
+            class="xs:w-[25%] sm:w-[13%] xl:w-[10%] 2xl:w-[7%] cursor-pointer"
+          />
+          <img
+            src="./Images/home/extra/extra-6.png"
+            alt=""
+            class="xs:w-[25%] sm:w-[13%] xl:w-[10%] 2xl:w-[7%] cursor-pointer"
+          />
+          <img
+            src="./Images/home/extra/extra-7.png"
+            alt=""
+            class="xs:w-[25%] sm:w-[13%] xl:w-[10%] 2xl:w-[7%] cursor-pointer"
+          />
+          <img
+            src="./Images/home/extra/extra-8.png"
+            alt=""
+            class="xs:w-[25%] sm:w-[13%] xl:w-[10%] 2xl:w-[7%] cursor-pointer"
+          />
+        </div>
+      </div>
+      <!-- ----------------- Extra end------------------ -->
+      <!-- --------------------- Online Streaming Events --------------------- -->
+      <div class="w-full flex justify-center">
+        <div
+          class="xs:w-full xl:w-[65%] w-[65%] flex items-center justify-between p-2"
+        >
+          <div
+            class="xs:text-base xs:w-full xl:text-2xl w-96 flex justify-between text-2xl font-bold"
+          >
+            <span>Online Streaming Events</span>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex justify-center">
+        <div
+          class="slider xs:w-full xs:p-0 xl:w-[65%] w-[65%] flex items-center justify-center text-sm p-2"
+        >
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00063710-vbaekxtkuh-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Brahmastra</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Adventure/Fantasy</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00076943-wapqzjeadj-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Top Gun : Maverick</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Drama</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00307869-brknthzubb-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Karthikeya 2</span
+            ><br />
+            <span class="xs:text-xs text-base">Fantasy/Mystery/Thriller</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00322816-nyqvzhqjdz-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            /><span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Oke Oka Jeevitham</span
+            ><br />
+            <span class="xs:text-xs text-base">Drama/Sci-Fi/Thriller</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00329656-przcvuftwc-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Sita Ramam</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Drama/Romantic</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00331590-ezbvpdagxj-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Takatak 2</span
+            ><br />
+            <span class="xs:text-xs text-base">Comedy/Romantic</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00331912-enlthftmgl-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Daagdi Chaawl 2</span
+            ><br />
+            <span class="xs:text-xs text-base">Crime/Drama</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00333354-ratqcxklzk-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Beast (English)</span
+            ><br />
+            <span class="xs:text-xs text-base">Adventure/Horror/Thriller</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00335260-mqucsyadhv-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Captain</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Sci-Fi/Thriller</span>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------- Online Streaming Events end --------------------- -->
+      <!-- --------------------- Events Happening Near You --------------------- -->
+      <div class="w-full flex justify-center">
+        <div
+          class="xs:w-full xl:w-[65%] w-[65%] flex items-center justify-between p-2"
+        >
+          <div
+            class="xs:w-full xs:text-base xl:text-2xl w-96 flex justify-between text-2xl font-bold"
+          >
+            <span>Events Happening Near You</span>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex justify-center">
+        <div
+          class="slider xs:w-full xs:p-0 xl:w-[65%] w-[65%] flex items-center justify-center text-sm p-2"
+        >
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00063710-vbaekxtkuh-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Brahmastra</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Adventure/Fantasy</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00076943-wapqzjeadj-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Top Gun : Maverick</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Drama</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00307869-brknthzubb-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Karthikeya 2</span
+            ><br />
+            <span class="xs:text-xs text-base">Fantasy/Mystery/Thriller</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00322816-nyqvzhqjdz-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            /><span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Oke Oka Jeevitham</span
+            ><br />
+            <span class="xs:text-xs text-base">Drama/Sci-Fi/Thriller</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00329656-przcvuftwc-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Sita Ramam</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Drama/Romantic</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00331590-ezbvpdagxj-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Takatak 2</span
+            ><br />
+            <span class="xs:text-xs text-base">Comedy/Romantic</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00331912-enlthftmgl-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Daagdi Chaawl 2</span
+            ><br />
+            <span class="xs:text-xs text-base">Crime/Drama</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00333354-ratqcxklzk-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Beast (English)</span
+            ><br />
+            <span class="xs:text-xs text-base">Adventure/Horror/Thriller</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00335260-mqucsyadhv-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Captain</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Sci-Fi/Thriller</span>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------- Events Happening Near You end --------------------- -->
+      <!-- --------------------- top games and sport events --------------------- -->
+      <div class="w-full flex justify-center">
+        <div
+          class="xs:w-full xl:w-[65%] w-[65%] flex items-center justify-between p-2"
+        >
+          <div
+            class="xs:w-full xs:text-base xl:text-2xl w-96 flex justify-between text-2xl font-bold"
+          >
+            <span>Top Games And Sport Events</span>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex justify-center">
+        <div
+          class="slider xs:w-full xs:p-0 xl:w-[65%] w-[65%] flex items-center justify-center text-sm p-2"
+        >
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00063710-vbaekxtkuh-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Brahmastra</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Adventure/Fantasy</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00076943-wapqzjeadj-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Top Gun : Maverick</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Drama</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00307869-brknthzubb-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Karthikeya 2</span
+            ><br />
+            <span class="xs:text-xs text-base">Fantasy/Mystery/Thriller</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00322816-nyqvzhqjdz-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            /><span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Oke Oka Jeevitham</span
+            ><br />
+            <span class="xs:text-xs text-base">Drama/Sci-Fi/Thriller</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00329656-przcvuftwc-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Sita Ramam</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Drama/Romantic</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00331590-ezbvpdagxj-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Takatak 2</span
+            ><br />
+            <span class="xs:text-xs text-base">Comedy/Romantic</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00331912-enlthftmgl-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Daagdi Chaawl 2</span
+            ><br />
+            <span class="xs:text-xs text-base">Crime/Drama</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00333354-ratqcxklzk-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Beast (English)</span
+            ><br />
+            <span class="xs:text-xs text-base">Adventure/Horror/Thriller</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00335260-mqucsyadhv-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Captain</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Sci-Fi/Thriller</span>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------- top games and sport events end --------------------- -->
+      <!-- ------------------ trending searches right now ---------------- -->
+      <div class="w-full flex justify-center">
+        <div
+          class="xs:w-full xl:w-[65%] w-[65%] flex items-center justify-between p-2"
+        >
+          <div
+            class="xs:w-full xs:text-base xl:text-2xl w-96 flex justify-between text-2xl font-bold"
+          >
+            <span>Tredning Searches Right Now</span>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex justify-center">
+        <div
+          class="xs:w-full xs:justify-center xs:items-start xs:gap-1 xs:p-0 xl:w-[65%] xl:gap-3 w-[65%] flex gap-3 flex-wrap items-start justify-start text-sm p-2"
+        >
+          <div
+            class="xs:w-[30%] sm:w-[20%] p-4 rounded-sm border border-gray-200 flex flex-col bg-white w-[13%] cursor-pointer hover:shadow-lg hover:shadow-[#F84464]"
+          >
+            <span
+              class="xs:text-sm xl:text-lg text-base font-semibold text-[#F84464]"
+              >Brahmastra</span
+            >
+            <span class="xs:text-xs">Movies</span>
+          </div>
+          <div
+            class="xs:w-[35%] sm:w-[20%] p-4 rounded-sm border border-gray-200 flex flex-col bg-white w-[10%] cursor-pointer hover:shadow-lg hover:shadow-[#F84464]"
+          >
+            <span
+              class="xs:text-sm xl:text-lg text-base font-semibold text-[#F84464]"
+              >Sita Ramam</span
+            >
+            <span class="xs:text-xs">Movies</span>
+          </div>
+          <div
+            class="xs:w-[25%] sm:w-[15%] p-4 rounded-sm border border-gray-200 flex flex-col bg-white w-[9%] cursor-pointer hover:shadow-lg hover:shadow-[#F84464]"
+          >
+            <span
+              class="xs:text-sm xl:text-lg text-base font-semibold text-[#F84464]"
+              >Boyz 3</span
+            >
+            <span class="xs:text-xs">Movies</span>
+          </div>
+          <div
+            class="xs:w-[40%] sm:w-[25%] p-4 rounded-sm border border-gray-200 flex flex-col bg-white w-[13%] cursor-pointer hover:shadow-lg hover:shadow-[#F84464]"
+          >
+            <span
+              class="xs:text-sm xl:text-lg text-base font-semibold text-[#F84464]"
+              >Daagdi Chaawl 2</span
+            >
+            <span class="xs:text-xs">Movies</span>
+          </div>
+          <div
+            class="xs:w-[20%] sm:w-[15%] p-4 rounded-sm border border-gray-200 flex flex-col bg-white w-[10%] cursor-pointer hover:shadow-lg hover:shadow-[#F84464]"
+          >
+            <span
+              class="xs:text-sm xl:text-lg text-base font-semibold text-[#F84464]"
+              >Liger</span
+            >
+            <span class="xs:text-xs">Movies</span>
+          </div>
+          <div
+            class="xs:w-[35%] sm:w-[20%] p-4 rounded-sm border border-gray-200 flex flex-col bg-white w-[13%] cursor-pointer hover:shadow-lg hover:shadow-[#F84464]"
+          >
+            <span
+              class="xs:text-sm xl:text-lg text-base font-semibold text-[#F84464]"
+              >De Dhakka 2</span
+            >
+            <span class="xs:text-xs">Movies</span>
+          </div>
+          <div
+            class="xs:w-[25%] sm:w-[15%] p-4 rounded-sm border border-gray-200 flex flex-col bg-white w-[10%] cursor-pointer hover:shadow-lg hover:shadow-[#F84464]"
+          >
+            <span
+              class="xs:text-sm xl:text-lg text-base font-semibold text-[#F84464]"
+              >Mangala</span
+            >
+            <span class="xs:text-xs">Movies</span>
+          </div>
+          <div
+            class="xs:w-[40%] sm:w-[22%] p-4 rounded-sm border border-gray-200 flex flex-col bg-white w-[13%] cursor-pointer hover:shadow-lg hover:shadow-[#F84464]"
+          >
+            <span
+              class="xs:text-sm xl:text-lg text-base font-semibold text-[#F84464]"
+              >K.G.F. Chapter 2</span
+            >
+            <span class="xs:text-xs">Movies</span>
+          </div>
+          <div
+            class="xs:w-[40%] sm:w-[22%] p-4 rounded-sm border border-gray-200 flex flex-col bg-white w-[15%] cursor-pointer hover:shadow-lg hover:shadow-[#F84464]"
+          >
+            <span
+              class="xs:text-sm xl:text-lg text-base font-semibold text-[#F84464]"
+              >Raksha Bandhan</span
+            >
+            <span class="xs:text-xs">Movies</span>
+          </div>
+          <div
+            class="xs:w-[40%] sm:w-[20%] p-4 rounded-sm border border-gray-200 flex flex-col bg-white w-[12%] cursor-pointer hover:shadow-lg hover:shadow-[#F84464]"
+          >
+            <span
+              class="xs:text-sm xl:text-lg text-base font-semibold text-[#F84464]"
+              >Karthikeya 2</span
+            >
+            <span class="xs:text-xs">Movies</span>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------ trending searches right now end ---------------- -->
+      <!-- ------------ explore fun Activitis -------------- -->
+      <div class="w-full flex justify-center mt-4">
+        <div
+          class="xs:w-full xl:w-[65%] w-[65%] flex items-center justify-between p-2"
+        >
+          <div
+            class="xs:text-base xl:text-2xl w-96 flex justify-between text-2xl font-bold"
+          >
+            <span>Explore Fun Activities</span>
+          </div>
+          <div class="w-80 flex justify-end text-sm font-medium text-[#F84464]">
+            <span class="hover:cursor-pointer">See All ></span>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex justify-center">
+        <div
+          class="slider xs:w-full xs:p-0 xl:w-[65%] w-[65%] flex items-center justify-center text-sm p-2"
+        >
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00063710-vbaekxtkuh-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Brahmastra</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Adventure/Fantasy</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00076943-wapqzjeadj-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Top Gun : Maverick</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Drama</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00307869-brknthzubb-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Karthikeya 2</span
+            ><br />
+            <span class="xs:text-xs text-base">Fantasy/Mystery/Thriller</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00322816-nyqvzhqjdz-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            /><span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Oke Oka Jeevitham</span
+            ><br />
+            <span class="xs:text-xs text-base">Drama/Sci-Fi/Thriller</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00329656-przcvuftwc-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Sita Ramam</span
+            ><br />
+            <span class="xs:text-xs text-base">Action/Drama/Romantic</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00331590-ezbvpdagxj-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Takatak 2</span
+            ><br />
+            <span class="xs:text-xs text-base">Comedy/Romantic</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00331912-enlthftmgl-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Daagdi Chaawl 2</span
+            ><br />
+            <span class="xs:text-xs text-base">Crime/Drama</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00333354-ratqcxklzk-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm xl:text-lg text-lg font-semibold"
+              >Beast (English)</span
+            ><br />
+            <span class="xs:text-xs text-base">Adventure/Horror/Thriller</span>
+          </div>
+          <div class="m-2 cursor-pointer">
+            <img
+              src="./Images/home/movies/et00335260-mqucsyadhv-portrait.jpg"
+              alt="Movie"
+              class="rounded-lg hover:shadow-lg hover:shadow-[#F84464]"
+            />
+            <span class="xs:text-sm text-lg font-semibold">Captain</span><br />
+            <span class="xs:text-sm text-base">Action/Sci-Fi/Thriller</span>
+          </div>
+        </div>
+      </div>
+      <!-- ------------ explore fun Activitis -------------- -->
+      <!-- ------------------ footer -------------- -->
+      <div class="xs:mt-2 w-full flex justify-center mt-4 bg-white">
+        <div
+          class="xs:w-full xl:w-[65%] flex items-center justify-between text-sm p-2"
+        >
+          <span class="text-gray-500 cursor-pointer">Home</span>
+        </div>
+      </div>
+      <div
+        class="footerDiv w-full flex flex-col items-center justify-center mt-4 bg-[#313035]"
+      >
+        <div
+          class="xs:w-full xs:flex-col xs:pr-1 xs:pl-1 xl:w-[65%] xl:flex-row xl:justify-between w-[65%] flex items-center justify-center text-sm pt-3 pb-3"
+        >
+          <span
+            class="xs:flex-col xl:flex-row flex items-center justify-center"
+          >
+            <i class="fa-regular fa-calendar-plus fa-2x"></i>
+            <span
+              class="xs:text-sm xs:ml-0 xs:font-medium xl:ml-4 xl:text-base xlfont-bold"
+            >
+              List Your Show
+            </span>
+            <span
+              class="xs:ml-0 xs:text-center xs:text-sm xl:ml-4 xl:text-base font-light"
+              >Got a show, event, activity or a great experience? Partner with
+              us & get listed on BookMyShow.</span
+            >
+          </span>
+          <span
+            class="xs:pt-2 xs:pb-2 xs:pr-3 xs:pl-3 xs:text-sm xs:mt-2 xl:mt-0 xl:pt-3 xl:pb-3 xl:pr-5 xl:pl-5 xl:text-base xl:font-medium bg-[#EC5E71] hover:bg-red-500 hover:shadow-md hover:shadow-[#D1D5DB] cursor-pointer rounded-md"
+            >Contact today!
+          </span>
+        </div>
+        <div
+          class="footerDivIcon xs:justify-center xs:items-center xs:pt-2 xs:pb-2 xs:mb-2 xl:justify-evenly xl:mb-5 xl:pt-5 xl:pb-5 w-full flex items-center text-xs uppercase p-2 bg-[#404043] mb-5 pt-5 pb-5"
+        >
+          <div
+            class="hoverIconText xs:w-1/3 xl:w-1/5 flex flex-col items-center justify-center"
+          >
+            <span><i class="fa-solid fa-headset fa-3x"></i></span>
+            <span class="xs:text-center xs:mt-2 xl:mt-4"
+              >24/7 Customer Care</span
+            >
+          </div>
+          <div
+            class="hoverIconText xs:w-1/3 xl:w-1/5 flex flex-col items-center justify-center"
+          >
+            <i class="fa-solid fa-ticket fa-3x"></i>
+            <span class="xs:text-center xs:mt-2 mt-4"
+              >Resend Booking Confirmation</span
+            >
+          </div>
+          <div
+            class="hoverIconText xs:w-1/3 xl:w-1/5 flex flex-col items-center justify-center"
+          >
+            <i class="fa-solid fa-rss fa-3x"></i>
+            <span class="xs:text-center xs:mt-2 mt-4"
+              >subscribe to the newsletter</span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- --------------- footer end ------------------ -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

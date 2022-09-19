@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mainContainer {
+  height: 100vh;
+  width: 100vw;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: black;
+}
+
+.footerDiv {
+  color: white;
+}
+
+.footerDivIcon {
+  color: #a4a4a6;
+}
+
+.hoverIconText:hover {
+  color: white;
+  cursor: pointer;
+}
+
+@media (min-width: 360px) {
+  .searchBar {
+    display: none;
+  }
+}

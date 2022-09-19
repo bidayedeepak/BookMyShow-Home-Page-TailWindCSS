@@ -1,0 +1,22 @@
+{
+  "name": "bookmyshow-home-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.9",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
+    "vite": "^3.1.0"
+  },
+  "dependencies": {
+    "tailwind-scrollbar-hide": "^1.1.7"
+  }
+}
